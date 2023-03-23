@@ -1,3 +1,41 @@
+mport logging
+from typing import List, Literal, Optional
+
+import numpy as np
+from anndata import AnnData
+
+from scvi import REGISTRY_KEYS
+from scvi._types import MinifiedDataType
+from scvi.data import AnnDataManager
+from scvi.data._constants import _ADATA_MINIFY_TYPE_UNS_KEY, ADATA_MINIFY_TYPE
+from scvi.data._utils import _get_adata_minify_type
+from scvi.data.fields import (
+    BaseAnnDataField,
+    CategoricalJointObsField,
+    CategoricalObsField,
+    LayerField,
+    NumericalJointObsField,
+    NumericalObsField,
+    ObsmField,
+    StringUnsField,
+)
+from scvi.model._utils import _init_library_size
+from scvi.model.base import UnsupervisedTrainingMixin
+from scvi.model.utils import get_minified_adata_scrna
+from scvi.module import VAE
+from scvi.utils import setup_anndata_dsp
+
+from .base import ArchesMixin, BaseMinifiedModeModelClass, RNASeqMixin, VAEMixin
+
+_SCVI_LATENT_QZM = "_scvi_latent_qzm"
+_SCVI_LATENT_QZV = "_scvi_latent_qzv"
+_SCVI_OBSERVED_LIB_SIZE = "_scvi_observed_lib_size"
+
+logger = logging.getLogger(__name__)
+
+
+
+
 import logging
 from typing import List, Optional
 
