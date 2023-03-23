@@ -84,7 +84,7 @@ class MyModel(VAEMixin, UnsupervisedTrainingMixin, BaseModelClass, RNASeqMixin):
     >>> adata.obsm["X_mymodel"] = vae.get_latent_representation()
     """
 
-     _module_cls = MyModule
+    _module_cls = MyModule
 
     def __init__(
         self,
