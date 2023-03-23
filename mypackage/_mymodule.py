@@ -21,7 +21,7 @@ from torch.distributions import kl_divergence as kl
 
 from scvi import REGISTRY_KEYS
 # from scvi.autotune._types import Tunable
-import scvi.autotune._types  
+from scvi import scvi.autotune._types  
 import scvi.data._constants  
 
 # from scvi.data._constants import ADATA_MINIFY_TYPE
