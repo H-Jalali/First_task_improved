@@ -33,7 +33,8 @@ import scvi.model.utils
 from scvi.module import VAE
 from scvi.utils import setup_anndata_dsp
 
-from scvi.model.base import ArchesMixin, BaseMinifiedModeModelClass, RNASeqMixin, VAEMixin
+# from scvi.model.base import ArchesMixin, BaseMinifiedModeModelClass, RNASeqMixin, VAEMixin
+import scvi.model.base 
 
 _SCVI_LATENT_QZM = "_scvi_latent_qzm"
 _SCVI_LATENT_QZV = "_scvi_latent_qzv"
