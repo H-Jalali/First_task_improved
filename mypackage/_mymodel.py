@@ -28,7 +28,8 @@ import scvi.data.fields
 import scvi.model._utils
 # from scvi.model._utils import _init_library_size
 from scvi.model.base import UnsupervisedTrainingMixin
-from scvi.model.utils import get_minified_adata_scrna
+# from scvi.model.utils import get_minified_adata_scrna
+import scvi.model.utils 
 from scvi.module import VAE
 from scvi.utils import setup_anndata_dsp
 
