@@ -28,7 +28,11 @@ import scvi.data._constants
 from scvi.distributions import NegativeBinomial, Poisson, ZeroInflatedNegativeBinomial
 # from scvi.module.base import BaseMinifiedModeModuleClass, LossOutput, auto_move_data
 from scvi.nn import DecoderSCVI, Encoder, LinearDecoderSCVI, one_hot
-import scvi.module.base  
+import scvi.module.base.__init__
+import scvi.module.base._base_module
+import scvi.module.base._decorators
+import scvi.module.base._pyro
+
 
 torch.backends.cudnn.benchmark = True
 
