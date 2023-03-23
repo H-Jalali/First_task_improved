@@ -3,7 +3,7 @@ import torch
 import torch.nn.functional as F
 from scvi import REGISTRY_KEYS
 from scvi.distributions import ZeroInflatedNegativeBinomial
-from scvi.module.base import BaseModuleClass, LossRecorder, auto_move_data
+# from scvi.module.base import BaseModuleClass, LossRecorder, auto_move_data
 from scvi.nn import DecoderSCVI, Encoder, one_hot
 from torch.distributions import Normal
 from torch.distributions import kl_divergence as kl
