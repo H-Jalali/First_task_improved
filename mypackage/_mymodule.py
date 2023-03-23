@@ -29,7 +29,7 @@ from scvi.nn import DecoderSCVI, Encoder, LinearDecoderSCVI, one_hot
 torch.backends.cudnn.benchmark = True
 
 
-class Mymodule(BaseMinifiedModeModuleClass):
+class MyModule(BaseMinifiedModeModuleClass):
     """Variational auto-encoder model.
     This is an implementation of the scVI model described in :cite:p:`Lopez18`.
     Parameters
