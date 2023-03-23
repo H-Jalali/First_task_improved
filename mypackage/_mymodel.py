@@ -3,9 +3,10 @@ from typing import List, Literal, Optional
 
 import numpy as np
 from anndata import AnnData
+from typing import Dict, Literal, Union
 
 from scvi import REGISTRY_KEYS
-from scvi._types import MinifiedDataType
+MinifiedDataType = Literal["latent_posterior_parameters"]
 from scvi.data import AnnDataManager
 from scvi.data._constants import _ADATA_MINIFY_TYPE_UNS_KEY, ADATA_MINIFY_TYPE
 from scvi.data._utils import _get_adata_minify_type
