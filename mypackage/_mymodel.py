@@ -14,16 +14,17 @@ _ADATA_MINIFY_TYPE_UNS_KEY = "_scvi_adata_minify_type"
 import scvi.data._constants 
 
 # from scvi.data._utils import _get_adata_minify_type
-from scvi.data.fields import (
-    BaseAnnDataField,
-    CategoricalJointObsField,
-    CategoricalObsField,
-    LayerField,
-    NumericalJointObsField,
-    NumericalObsField,
-    ObsmField,
-    StringUnsField,
-)
+# from scvi.data.fields import (
+#     BaseAnnDataField,
+#     CategoricalJointObsField,
+#     CategoricalObsField,
+#     LayerField,
+#     NumericalJointObsField,
+#     NumericalObsField,
+#     ObsmField,
+#     StringUnsField,
+# )
+import scvi.data.fields
 import scvi.model._utils
 # from scvi.model._utils import _init_library_size
 from scvi.model.base import UnsupervisedTrainingMixin
