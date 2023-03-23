@@ -36,7 +36,7 @@ import scvi.module.base._pyro
 
 torch.backends.cudnn.benchmark = True
 
-
+from scvi.module.base._base_module import BaseMinifiedModeModuleClass
 class MyModule(BaseMinifiedModeModuleClass):
     """Variational auto-encoder model.
     This is an implementation of the scVI model described in :cite:p:`Lopez18`.
