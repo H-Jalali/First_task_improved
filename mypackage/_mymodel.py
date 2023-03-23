@@ -8,7 +8,9 @@ from typing import Dict, Literal, Union
 from scvi import REGISTRY_KEYS
 MinifiedDataType = Literal["latent_posterior_parameters"]
 from scvi.data import AnnDataManager
-from scvi.data._constants import _ADATA_MINIFY_TYPE_UNS_KEY, ADATA_MINIFY_TYPE
+_ADATA_MINIFY_TYPE_UNS_KEY = "_scvi_adata_minify_type"
+
+from scvi.data._constants import ADATA_MINIFY_TYPE
 from scvi.data._utils import _get_adata_minify_type
 from scvi.data.fields import (
     BaseAnnDataField,
