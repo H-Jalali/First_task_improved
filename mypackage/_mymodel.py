@@ -10,7 +10,9 @@ MinifiedDataType = Literal["latent_posterior_parameters"]
 from scvi.data import AnnDataManager
 _ADATA_MINIFY_TYPE_UNS_KEY = "_scvi_adata_minify_type"
 
-from scvi.data._constants import ADATA_MINIFY_TYPE
+# from scvi.data._constants import ADATA_MINIFY_TYPE
+import scvi.data._constants 
+
 from scvi.data._utils import _get_adata_minify_type
 from scvi.data.fields import (
     BaseAnnDataField,
