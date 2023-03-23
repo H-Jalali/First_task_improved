@@ -11,7 +11,7 @@ from scvi.data.fields import (
     NumericalJointObsField,
 )
 from scvi.model._utils import _init_library_size
-from scvi.model.base import BaseModelClass, UnsupervisedTrainingMixin, VAEMixin
+from scvi.model.base import BaseModelClass, UnsupervisedTrainingMixin, VAEMixin, RNASeqMixin
 from scvi.utils import setup_anndata_dsp
 
 from ._mymodule import MyModule
@@ -19,7 +19,7 @@ from ._mymodule import MyModule
 logger = logging.getLogger(__name__)
 
 
-class MyModel(VAEMixin, UnsupervisedTrainingMixin, BaseModelClass):
+class MyModel(VAEMixin, UnsupervisedTrainingMixin, BaseModelClass, RNASeqMixin):
     """
     Skeleton for an scvi-tools model.
 
