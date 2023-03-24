@@ -12,6 +12,7 @@ _ADATA_MINIFY_TYPE_UNS_KEY = "_scvi_adata_minify_type"
 
 from scvi.data._constants import ADATA_MINIFY_TYPE
 import scvi.data._constants 
+import scvi.model.base._base_model
 
 from scvi.data._utils import _get_adata_minify_type
 from scvi.data.fields import (
