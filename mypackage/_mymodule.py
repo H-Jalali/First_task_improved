@@ -23,7 +23,7 @@ from scvi import REGISTRY_KEYS
 from scvi.autotune._types import Tunable
 import scvi.autotune._types  
 import scvi.data._constants  
-
+from scvi.module import VAE
 # from scvi.data._constants import ADATA_MINIFY_TYPE
 from scvi.distributions import NegativeBinomial, Poisson, ZeroInflatedNegativeBinomial
 from scvi.module.base import BaseMinifiedModeModuleClass, LossOutput, auto_move_data
