@@ -34,7 +34,7 @@ import scvi.model.utils
 from scvi.module import VAE
 from scvi.utils import setup_anndata_dsp
 
-# from scvi.model.base import ArchesMixin, BaseMinifiedModeModelClass, RNASeqMixin, VAEMixin
+# from scvi.model.base import ArchesMixin, BaseMinifiedModeModelClass, RNASeqMixin, VAEMixin, BaseMinifiedModeModelClass
 import scvi.model.base 
 
 _SCVI_LATENT_QZM = "_scvi_latent_qzm"
@@ -59,7 +59,7 @@ from scvi.data.fields import (
     NumericalJointObsField,
 )
 from scvi.model._utils import _init_library_size
-from scvi.model.base import BaseModelClass, UnsupervisedTrainingMixin, VAEMixin, RNASeqMixin
+from scvi.model.base import BaseModelClass, UnsupervisedTrainingMixin, VAEMixin, RNASeqMixin, BaseMinifiedModeModelClass
 from scvi.utils import setup_anndata_dsp
 
 from ._mymodule import MyModule
@@ -67,7 +67,7 @@ from ._mymodule import MyModule
 logger = logging.getLogger(__name__)
 
 
-class MyModel(VAEMixin, UnsupervisedTrainingMixin, BaseModelClass, RNASeqMixin):
+class MyModel(VAEMixin, UnsupervisedTrainingMixin, BaseModelClass, RNASeqMixin, BaseMinifiedModeModelClass):
     """
     Skeleton for an scvi-tools model.
 
