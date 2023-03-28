@@ -1,14 +1,6 @@
-# scvi-tools-skeleton
+# First_task_improved
 
-This repository is no longer being maintained. Please use [scverse cookicutter](https://github.com/scverse/cookiecutter-scverse) as a template for future projects.
+We implemented a [paper](https://www.nature.com/articles/s41592-018-0229-2) in this repository using SCVI-tools-skeleton. 
 
-We host simple implementations of scVI using the cookiecutter template at the [simple-scvi](https://github.com/scverse/simple-scvi) repo.
+The test file exists in the test folder.
 
-
-Skeleton repository for creating novel models with
-[scvi-tools](https://www.scvi-tools.org/en/stable/). For questions about
-using this skeleton, please use the scvi-tools
-[forum](https://discourse.scvi-tools.org/).
-
-
-Getting started development using this skeleton is similar to [getting started](https://docs.scvi-tools.org/en/stable/contributing/index.html) with scvi-tools.
